@@ -1,6 +1,8 @@
 import { EventEmitter } from 'events'
 import Auth0Lock from 'auth0-lock'
+import logo from './logo_socially'
 //import { browserHistory } from 'react-router' //    "react-router": "^2.8.0"
+
 
 
 export default class AuthService extends EventEmitter {
@@ -9,6 +11,9 @@ export default class AuthService extends EventEmitter {
 
     // Configure Auth0
     this.lock = new Auth0Lock(clientId, domain, {
+      theme: {
+        logo: logo
+      },
       auth: {
         redirectUrl: window.location.origin + '/',
         responseType: 'token'
