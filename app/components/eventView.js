@@ -90,7 +90,6 @@ class EventView extends Component {
           saveToDatabase={this.saveToDatabase.bind(this)}
           receiveMessage={this.receiveMessage.bind(this)}
           profile={this.props.profile} />
-        <SidePanel />
     </div>
     );
   }
