@@ -42,7 +42,7 @@ const ChatMessage = (props) => {
         <ListItem
           leftAvatar={<Avatar src={props.image} />}
           rightIconButton={rightIconMenu}
-          primaryText={<span style={{fontSize: 18 + 'px'}}>{props.user}</span>}
+          primaryText={<span style={{fontSize: 14 + 'px'}}>{props.user}</span>}
           secondaryText={
           <div className="row" style={styles.root}>
             <div style={styles.child} >
@@ -60,10 +60,10 @@ const ChatMessage = (props) => {
       <ListItem
         leftAvatar={<Avatar src={props.image} />}
         rightIconButton={rightIconMenu}
-        primaryText={<span style={{fontSize: 18 + 'px'}}>{props.user}</span>}
+        primaryText={<span style={{fontSize: 14 + 'px'}}>{props.user}</span>}
         secondaryText={
           <p>
-         <span style={{color: 'black', fontSize: 22 + 'px'}}>{props.message}</span>
+         <span style={{color: 'black', fontSize: 18 + 'px'}}>{props.message}</span>
           </p>
         }
         secondaryTextLines={2}
