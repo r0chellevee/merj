@@ -23,7 +23,7 @@ const styles = {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    width: '100%',
+    width: 30 + '%',
     padding: 10,
   },
   gridList: {
@@ -41,6 +41,7 @@ const styles = {
     color: 'rgb(0, 188, 212)'
   }
 };
+
 
 //Start of Gifs component
 class Gifs extends Component {
@@ -71,7 +72,7 @@ class Gifs extends Component {
 
 //Takes string after ".gif" trigger and sets it as query
   handleQuery(query) {
-    const keyword = query.slice(4);
+    const keyword = query.slice(7);
     this.setState({query: keyword, prefix: query})
     this.getGifs()
   }
@@ -105,7 +106,7 @@ class Gifs extends Component {
   render() {
   return (
     <IconMenu
-      style={styles.root}
+      style={styles.icon}
       open={this.state.dropdown}
       iconButtonElement={<div></div>}
       anchorOrigin={{horizontal: 'left', vertical: 'bottom'}}
