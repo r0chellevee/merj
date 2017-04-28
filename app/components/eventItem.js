@@ -43,7 +43,7 @@ class EventItem extends Component {
         </CardText>
         <CardActions className="actions">
            <FlatButton className="btn" label="Would Love To Go!" onClick={() => this.props.handleEventClick(this.props.event)}/>
-           <FlatButton className="btn" label="I'm Gonna Pass for Now" />
+           <FlatButton className="btn" label="I'm Gonna Pass for Now" onClick={this.onDelete}/>
         </CardActions>
       </Card>
       </div>

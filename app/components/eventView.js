@@ -3,7 +3,7 @@ import { UsersContainer } from './chat-users-container'
 import { ChatInput } from './chat-input'
 import { ChatContainer } from './chat-container'
 import { EventDetails } from './eventDetails'
-import SidePanel from './chat-sidepanel'
+// import SidePanel from './chat-sidepanel'
 import io from 'socket.io-client'
 import axios from 'axios'
 
