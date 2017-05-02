@@ -8,7 +8,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 //chatroom
-server.listen(8080, function() {
+server.listen(process.env.PORT || 8080, function() {
   console.log('listening on portato 8080')
 });
 
